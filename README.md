@@ -3,3 +3,6 @@
 ![image](https://github.com/user-attachments/assets/18b798dd-8a91-4e4a-84b2-b8fc6d090f51)
 GALERIA:
 ![image](https://github.com/user-attachments/assets/47216194-4645-4297-b196-4307656a47b4)
+
+DOCUMENTO:
+[Lab 14 - QUITO.pdf](https://github.com/user-attachments/files/18049427/Lab.14.-.QUITO.pdf)
