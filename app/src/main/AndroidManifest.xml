@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature android:name="android.hardware.camera.any"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!--
+Estamos en el AndroidManifest.xml para declarar los permisos y características necesarios
+  para acceder a la cámara del dispositivo por medio de la app.
+   <uses-feature android:name="android.hardware.camera.any" />:
+    Me dice que necesitaré de acceso a una cámara en mi dispositivo, para que la app haga uso de él, sirviendo a la vez que si mi celular no tiene
+    cámara, entonces no va a ser posible que se utilice en él.
+
+  - <uses-permission android:name="android.permission.CAMERA" />:
+   Con esto puedo pedir el permiso para acceder a la cámara del dispositivo, la aplicación pueda utilizar la cámara, pero además se debe verificar
+    y solicitar este permiso en tiempo de ejecución
+-->
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="CAMERAXTUTORIAL"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Laboratorio4Calificado"
+        tools:targetApi="31">
+        <activity
+            android:name=".GalleryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
